@@ -1,0 +1,4 @@
+Note TP_3_DSP
+on prends un timer de 800kHz mais on enleve un du decompte (104-1)
+
+On injecte un signal sinus qu'on mesure avec ADC puis un dac essaye de le reconstruire

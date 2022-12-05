@@ -1,0 +1,24 @@
+10:31:05 **** Incremental Build of configuration Debug for project TP_3 ****
+make -j6 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../USB_HOST/App -I../USB_HOST/Target -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Host_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Host_Library/Class/CDC/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:79:22: error: expected ']' before ',' token
+   79 | float sineTable[32768,32969,33170,33371,33572,33773,33974,34174,
+      |                      ^
+      |                      ]
+../Core/Src/main.c: In function 'ddsFunction':
+../Core/Src/main.c:242:58: error: 'sineTable' undeclared (first use in this function)
+  242 |  HAL_DAC_SetValue(&hdac, DAC_CHANNEL_2, DAC_ALIGN_12B_L, sineTable[(int)phaseAccumulator]);
+      |                                                          ^~~~~~~~~
+../Core/Src/main.c:242:58: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:247:14: error: 'htim2' undeclared (first use in this function); did you mean 'htim'?
+  247 |  if(htim == &htim2)
+      |              ^~~~~
+      |              htim
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:300:26: error: 'htim2' undeclared (first use in this function); did you mean 'htim3'?
+  300 |   HAL_TIM_Base_Start_IT(&htim2);
+      |                          ^~~~~
+      |                          htim3
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j6 all" terminated with exit code 2. Build might be incomplete.

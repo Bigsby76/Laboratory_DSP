@@ -1,0 +1,2 @@
+Note TP_1_DSP
+Si on utilise le DMA, il faut chnager l'initialisation. C'est a dire de mettre l'initialisation du DMA avant l'ADC dans le main.c
