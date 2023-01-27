@@ -1,0 +1,35 @@
+SGD -> stochastic gradient descent
+
+Neronal network is composed of only one neuron which is regression. 
+We won't use any hidden neuron or any additionnal layers
+
+
+
+for epoch = 30;
+R score is : -5.258186631627943
+a is : 1.5679044723510742
+b is : 0.24758915603160858
+
+for epoch = 100;
+R score is : -3.3538848713405978
+a is : 1.425466775894165
+b is : 0.7216073274612427
+
+for epoch = 300;
+R score is : -8.23319949836236
+a is : 0.49165987968444824
+b is : 1.339282512664795
+
+for epoch = 500;
+R score is : 0.6671383278034022
+a is : 1.016971230506897
+b is : 2.193389654159546
+
+
+for epoch = 800;
+R score is : 0.5335256448959667
+a is : 1.0631301403045654
+b is : 4.162506580352783
+
+
+Seems good with high epoch value but bad with too few values

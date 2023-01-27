@@ -1,0 +1,51 @@
+ADAM optimizer is another optimizer tested in this laboratory; on this one we can change the learnig rate ect
+
+-----Learning rate de 0.1-------
+for epoch = 10;
+R score is : 0.24185451107615152
+a is : 0.8847092986106873
+b is : 0.6651940941810608
+
+for epoch = 30;
+R score is : 0.1913705184163247
+a is : 0.9445938467979431
+b is : 4.141374588012695
+
+for epoch = 100;
+R score is : 0.711001446717598
+a is : 0.988823652267456
+b is : 9.242560386657715
+
+for epoch = 300;
+R score is : 0.0812056870204313
+a is : 1.1387124061584473
+b is : 8.468523979187012
+
+for epoch = 500;
+R score is : 0.5716290151829748
+a is : 0.9853702187538147
+b is : 8.728893280029297
+
+for epoch = 800;
+R score is : 0.09806559703914963
+R score is : 0.5235844660791393
+a is : 1.0000473260879517
+b is : 13.350707054138184
+
+Better precision for less iteration
+
+-----Learning rate de 0.1-------
+for epoch = 10;
+R score is : 0.09789174338420081
+a is : 0.8617324233055115
+b is : 11.565546035766602
+
+for epoch = 30;
+R score is : 0.6079050720614549
+a is : 1.0593961477279663
+b is : 8.342774391174316
+
+for epoch = 100;
+R score is : 0.6899155652631452
+a is : 0.9928464889526367
+b is : 12.22524642944336
